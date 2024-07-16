@@ -1,10 +1,12 @@
 # ---- Build ----
+#参照URL  https://snyk.io/jp/blog/choosing-the-best-node-js-docker-image/
 FROM node:16.15-alpine as builder
 
 USER node
 WORKDIR /usr/src/app
 COPY --chown=node:node package.json ./
-RUN npm install --legacy-peer-deps
+#RUN npm install --legacy-peer-deps
+RUN npm install --force
 
 COPY --chown=node:node . .
 RUN npm run build

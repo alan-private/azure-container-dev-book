@@ -2,8 +2,8 @@
 Schedule API using Java
 
 ###
-GET https://schedule.xxx.japaneast.azurecontainerapps.io/schedule
-
+#GET https://schedule.xxx.japaneast.azurecontainerapps.io/schedule
+GET https://schedule.graydesert-02983c58.japaneast.azurecontainerapps.io/schedule
 
 
 ###
